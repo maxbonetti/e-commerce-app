@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {
         { model: Tag }
       ]
     });
-    return res.status(200).json({ message: `Product${id}:`, product})  // Potential error here
+    return res.status(200).json({ message: `Product:`, product})  // Potential error here
   } catch (err) {
     return res.status(500).json({ message: `An error occurred: ${err}`})
   }
